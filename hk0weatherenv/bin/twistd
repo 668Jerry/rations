@@ -1,0 +1,14 @@
+#!/Users/lololol/Documents/Python/g0v/hk0weather/hk0weatherenv/bin/python
+# Copyright (c) Twisted Matrix Laboratories.
+# See LICENSE for details.
+import os, sys
+
+try:
+    import _preamble
+except ImportError:
+    sys.exc_clear()
+
+sys.path.insert(0, os.path.abspath(os.getcwd()))
+
+from twisted.scripts.twistd import run
+run()
